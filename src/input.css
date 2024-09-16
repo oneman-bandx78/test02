@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#151937];
+  }
+
+  section {
+    @apply mt-24;
+  }
+}
+
+@layer utilities {
+  header ul li {
+    @apply uppercase cursor-pointer  duration-300 hover:text-blue-800 inline-block mx-4;
+  }
+
+  .text-gradient {
+    /* @apply bg-clip-text fill-black bg-[linear-gradient(270.78deg,#ffa7a9_4.19%,#ff5ea3_96.11%)]; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-image: linear-gradient(270.78deg, #ffa7a9 4.19%, #ff5ea3 96.11%);
+  }
+
+  .active {
+    @apply text-[#9333ea] border-b-2 border-[#9333ea] pb-2;
+  }
+
+  .button {
+    @apply py-3 px-4 bg-gradient-to-r from-[#FE275C] to-[#FE7CF1]  hover:bg-gradient-to-tr rounded-full text-xl tracking-wider;
+  }
+}
+
+/* footer {
+  p {
+    @aplly text-3xl font-semibold
+  }
+} */
+
+footer ul li {
+    @apply text-gray-500 text-xl hover:text-white duration-200 cursor-pointer
+} 
+
+/* @media screen and (min-width: 640px) { 
+
+
+ } */
